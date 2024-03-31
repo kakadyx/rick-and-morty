@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         },
     },
     css: [
+        "~/app/styles/variables.scss",
         "~/app/styles/MiniReset.css",
         "~/app/styles/base.css",
     ],
