@@ -5,7 +5,8 @@ Node Version - `18 or higher`
 ## IDE setup
 Webstorm:
 - set `.nuxt/gql` as `resource root` and `include` (for typescript hints) with graphql client
-
+- eslint configuration:
+![img.png](img.png)
 VS Code:
 - install `Vue - official`(Volar) plugin
 - install `Nuxtr` plugin
