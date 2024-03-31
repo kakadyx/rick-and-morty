@@ -4,11 +4,17 @@ export default defineNuxtConfig({
     devtools: {
         enabled: true,
     },
-    modules: ["nuxt-graphql-client"],
+    modules: ["nuxt-graphql-client", "@nuxtjs/google-fonts"],
     runtimeConfig: {
         public: {
             GQL_HOST: "https://rickandmortyapi.com/graphql",
         },
     },
-    css: ["~/app/styles/MiniReset.css"],
+    css: ["~/app/styles/MiniReset.css", "~/app/styles/base.css"],
+    googleFonts: {
+        families: {
+            Roboto: true,
+        },
+        display: "swap",
+    },
 })
