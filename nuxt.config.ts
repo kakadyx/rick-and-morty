@@ -10,11 +10,23 @@ export default defineNuxtConfig({
             GQL_HOST: "https://rickandmortyapi.com/graphql",
         },
     },
-    css: ["~/app/styles/MiniReset.css", "~/app/styles/base.css"],
+    css: [
+        "~/app/styles/MiniReset.css",
+        "~/app/styles/base.css",
+    ],
     googleFonts: {
         families: {
             Roboto: true,
         },
         display: "swap",
+    },
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "~/app/styles/global.scss";',
+                },
+            },
+        },
     },
 })
